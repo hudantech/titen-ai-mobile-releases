@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 31,
+  "versionCode": 33,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build31",
-  "assetName": "titen-ai-0.1.1-build31-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build31/titen-ai-0.1.1-build31-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build31",
-  "sha256": "908d32dd3d38be5ff06593376db4ef0d09e62c6ee844d91282c8ff323837352a",
-  "bytes": 72375160,
-  "notes": "Sidebar lebih rapat seperti web seluler: jarak menu dikurangi, riwayat satu baris, pencarian dan bagian akun lebih ringkas."
+  "tag": "v0.1.1-build33",
+  "assetName": "titen-ai-0.1.1-build33-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build33/titen-ai-0.1.1-build33-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build33",
+  "sha256": "56ec52b2959bde763b0bba8057ebc01f1fef23df5002d1c0974744bf2301e6ce",
+  "bytes": 72691083,
+  "notes": "Popup tutup dari luar, chat lebih rapat, panel 3D dan galeri dua kolom seperti web. Akun tersimpan untuk masuk kembali. Pilihan konstruksi pada brief mengikuti commit web terbaru."
 }
