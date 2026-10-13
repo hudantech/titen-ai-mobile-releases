@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 30,
+  "versionCode": 31,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build30",
-  "assetName": "titen-ai-0.1.1-build30-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build30/titen-ai-0.1.1-build30-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build30",
-  "sha256": "8b985de498ef233859c679093e89c13327a5ab3384d3c0da3422bd5c813c37f6",
-  "bytes": 72371536,
-  "notes": "Tampilan seperti web seluler, sapaan akun, Desain saya, Pesanan saya, draf pesanan dan usulan katalog. Voice mengikuti pengaturan server; pembaruan APK tetap tersedia."
+  "tag": "v0.1.1-build31",
+  "assetName": "titen-ai-0.1.1-build31-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build31/titen-ai-0.1.1-build31-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build31",
+  "sha256": "908d32dd3d38be5ff06593376db4ef0d09e62c6ee844d91282c8ff323837352a",
+  "bytes": 72375160,
+  "notes": "Sidebar lebih rapat seperti web seluler: jarak menu dikurangi, riwayat satu baris, pencarian dan bagian akun lebih ringkas."
 }
