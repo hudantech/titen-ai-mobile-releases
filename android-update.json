@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 38,
+  "versionCode": 39,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build38",
-  "assetName": "titen-ai-0.1.1-build38-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build38/titen-ai-0.1.1-build38-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build38",
-  "sha256": "9e77229174a35634ef0a3b61c01210dabbbc1b2205901129476d64b06e224345",
-  "bytes": 72756735,
-  "notes": "Download update APK langsung di aplikasi dengan progres. Ukuran dan checksum SHA-256 diperiksa sebelum Pasang update. File rusak dapat diunduh ulang; akun tetap tersimpan."
+  "tag": "v0.1.1-build39",
+  "assetName": "titen-ai-0.1.1-build39-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build39/titen-ai-0.1.1-build39-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build39",
+  "sha256": "c66a12419c68567225b828e8bbd60e3cf2fc8a27ece3ae612b41aa88f4d29ec3",
+  "bytes": 72760499,
+  "notes": "Mengikuti web terbaru: brief dan draf pesanan disetujui lewat ketik atau suara. Hasil desain baru membuka preview 3D otomatis. Tombol Back kembali ke chat; download update dan checksum tetap tersedia."
 }
