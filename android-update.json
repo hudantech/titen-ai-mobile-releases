@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 37,
+  "versionCode": 38,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build37",
-  "assetName": "titen-ai-0.1.1-build37-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build37/titen-ai-0.1.1-build37-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build37",
-  "sha256": "ea87b29e5fe98e392a1f94fa47bf81f4c4197e9be8ee050c19c0a8efadf65fbd",
-  "bytes": 72714851,
-  "notes": "Voice dimulai dalam bahasa Indonesia dengan transkripsi Whisper. Kartu brief, draf pesanan dan Studio Desain lebih ringkas; peta Agentic ditata dari kiri ke kanan."
+  "tag": "v0.1.1-build38",
+  "assetName": "titen-ai-0.1.1-build38-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build38/titen-ai-0.1.1-build38-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build38",
+  "sha256": "9e77229174a35634ef0a3b61c01210dabbbc1b2205901129476d64b06e224345",
+  "bytes": 72756735,
+  "notes": "Download update APK langsung di aplikasi dengan progres. Ukuran dan checksum SHA-256 diperiksa sebelum Pasang update. File rusak dapat diunduh ulang; akun tetap tersimpan."
 }
