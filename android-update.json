@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 39,
+  "versionCode": 40,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build39",
-  "assetName": "titen-ai-0.1.1-build39-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build39/titen-ai-0.1.1-build39-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build39",
-  "sha256": "c66a12419c68567225b828e8bbd60e3cf2fc8a27ece3ae612b41aa88f4d29ec3",
-  "bytes": 72760499,
-  "notes": "Mengikuti web terbaru: brief dan draf pesanan disetujui lewat ketik atau suara. Hasil desain baru membuka preview 3D otomatis. Tombol Back kembali ke chat; download update dan checksum tetap tersedia."
+  "tag": "v0.1.1-build40",
+  "assetName": "titen-ai-0.1.1-build40-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build40/titen-ai-0.1.1-build40-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build40",
+  "sha256": "e796c9f9e9ba32528af412e56e3f0a62aff5231e35b46be9e2ca2250eea2ec46",
+  "bytes": 72764127,
+  "notes": "Thumbnail Pcs bagian mengikuti bentuk pola dan motif preview 3D seperti web. Draf pesanan mendukung pilihan konstruksi dan jumlah gambar acuan. Panel chat menunggu motif siap; backend tidak diubah."
 }
