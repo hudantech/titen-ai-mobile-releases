@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 43,
+  "versionCode": 44,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build43",
-  "assetName": "titen-ai-0.1.1-build43-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build43/titen-ai-0.1.1-build43-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build43",
-  "sha256": "5955b0c1ec1c9e83660d59a18adc10433d17f090ae00a37352f509e26e89d26c",
-  "bytes": 72778411,
-  "notes": "Perbaikan sambungan voice saat model transkripsi server berubah. Transkripsi mengikuti server/web, dengan jawaban awal bahasa Indonesia. Pembaruan mempertahankan login."
+  "tag": "v0.1.1-build44",
+  "assetName": "titen-ai-0.1.1-build44-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build44/titen-ai-0.1.1-build44-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build44",
+  "sha256": "5403b45f3fbc81c7e697b469cbc110a4947d27044a405c6a250f11cd89a93225",
+  "bytes": 72775467,
+  "notes": "Panel voice menampilkan transkripsi ucapan pengguna saja. Teks jawaban AI tetap di chat, suara dan animasi tetap berjalan. Transkripsi mengikuti server/web."
 }
