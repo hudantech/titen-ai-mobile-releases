@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 41,
+  "versionCode": 42,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build41",
-  "assetName": "titen-ai-0.1.1-build41-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build41/titen-ai-0.1.1-build41-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build41",
-  "sha256": "4c6315f59d98be714e0f3be1c13fa5d9b5237304f264694d2a9a8cc782548146",
-  "bytes": 72774387,
-  "notes": "Navigasi studio otomatis mengikuti chat asal seperti web. Mendukung kartu proyek Produk, Desain, Pesanan, progres studio, daftar ukuran, file produksi, dan alur proyek Agentic jika API mengirimkannya."
+  "tag": "v0.1.1-build42",
+  "assetName": "titen-ai-0.1.1-build42-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build42/titen-ai-0.1.1-build42-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build42",
+  "sha256": "3abc45b2c916ecf9b3e25022c4e159366f562324016f7e2021d62e2dab6a6734",
+  "bytes": 72773599,
+  "notes": "Mengikuti web produksi: draf Produk, Desain, Pesanan berurutan bebas; status Agentic belum operasional; URL pengembangan connector admin. Login dan Whisper tetap dipertahankan."
 }
