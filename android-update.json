@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 44,
+  "versionCode": 45,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build44",
-  "assetName": "titen-ai-0.1.1-build44-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build44/titen-ai-0.1.1-build44-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build44",
-  "sha256": "5403b45f3fbc81c7e697b469cbc110a4947d27044a405c6a250f11cd89a93225",
-  "bytes": 72775467,
-  "notes": "Panel voice menampilkan transkripsi ucapan pengguna saja. Teks jawaban AI tetap di chat, suara dan animasi tetap berjalan. Transkripsi mengikuti server/web."
+  "tag": "v0.1.1-build45",
+  "assetName": "titen-ai-0.1.1-build45-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build45/titen-ai-0.1.1-build45-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build45",
+  "sha256": "286642615432045b71ab927766771c8271a4978cf48f1287f4021f3aa8a80096",
+  "bytes": 72822435,
+  "notes": "Selaras dengan pembaruan web Oktober: suara mengikuti model server, memori dengan cakupan percakapan, kartu visual/logo, tinjauan influencer, laporan biaya, pemetaan pola dan produksi setelan. Panel voice tetap khusus transkripsi Anda."
 }
