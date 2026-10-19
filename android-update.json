@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 47,
+  "versionCode": 49,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build47",
-  "assetName": "titen-ai-0.1.1-build47-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build47/titen-ai-0.1.1-build47-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build47",
-  "sha256": "e68ba19aa11087ea1fbb3d7fc759933d4cd0f3989a24a7f14d1420e7fc226a59",
-  "bytes": 72880767,
-  "notes": "Checkout native dengan review dan pemulihan proses, pengaturan posisi peta Agentic tersimpan di HP, serta pencarian sidebar yang lebih rapi. Voice mengikuti konfigurasi server. Fitur Checkout mengikuti ketersediaan dan gate server."
+  "tag": "v0.1.1-build49",
+  "assetName": "titen-ai-0.1.1-build49-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build49/titen-ai-0.1.1-build49-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build49",
+  "sha256": "7cb3fc791ab3518d9bfc8d113657ee4320491bd92f8f4f32813ce93f8a601583",
+  "bytes": 72899391,
+  "notes": "Mengikuti web terbaru: review logo, status produksi dan audit konektor sesuai izin. Scroll mengikuti jawaban AI termasuk saat voice terbuka. Memperbaiki sambungan Gemini Live dan crash saat mengirim chat dengan keyboard terbuka. Backend dan pengaturan model tidak diubah."
 }
