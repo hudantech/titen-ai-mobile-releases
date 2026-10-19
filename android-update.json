@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 46,
+  "versionCode": 47,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build46",
-  "assetName": "titen-ai-0.1.1-build46-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build46/titen-ai-0.1.1-build46-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build46",
-  "sha256": "664260559abde84fef8eaa2f08a53c988d63fbdd47451ee0360ac0f72ec5d7f1",
-  "bytes": 72840539,
-  "notes": "Preview daftar person/nama/nomor, progres proyek dan voice, kontrak connector terbaru, serta penguncian upload/editor. Data person mengikuti ketersediaan server. Backend tidak diubah."
+  "tag": "v0.1.1-build47",
+  "assetName": "titen-ai-0.1.1-build47-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build47/titen-ai-0.1.1-build47-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build47",
+  "sha256": "e68ba19aa11087ea1fbb3d7fc759933d4cd0f3989a24a7f14d1420e7fc226a59",
+  "bytes": 72880767,
+  "notes": "Checkout native dengan review dan pemulihan proses, pengaturan posisi peta Agentic tersimpan di HP, serta pencarian sidebar yang lebih rapi. Voice mengikuti konfigurasi server. Fitur Checkout mengikuti ketersediaan dan gate server."
 }
