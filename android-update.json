@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 50,
+  "versionCode": 51,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build50",
-  "assetName": "titen-ai-0.1.1-build50-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build50/titen-ai-0.1.1-build50-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build50",
-  "sha256": "915a21bd713e4b90c932f44fc25926748644729d70192f7caca1227e272bc2af",
-  "bytes": 72900219,
-  "notes": "Memperbaiki voice Gemini Android yang terputus saat AI berbicara atau menjawab panjang akibat antrean audio penuh. Backend serta pengaturan model, suara dan transkripsi tetap sama."
+  "tag": "v0.1.1-build51",
+  "assetName": "titen-ai-0.1.1-build51-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build51/titen-ai-0.1.1-build51-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build51",
+  "sha256": "cf66e0a4a32d4f6a82ada7d14828e0c45eba18f6fe2f79815b83167161b98f28",
+  "bytes": 72899991,
+  "notes": "Teks jawaban voice tampil bertahap di chat saat AI berbicara. Transkripsi ucapan Anda berganti untuk ucapan berikutnya. Backend serta pengaturan model, suara dan transkripsi tetap sama."
 }
