@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 47,
+  "versionCode": 48,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build47",
-  "assetName": "titen-ai-0.1.1-build47-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build47/titen-ai-0.1.1-build47-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build47",
-  "sha256": "e68ba19aa11087ea1fbb3d7fc759933d4cd0f3989a24a7f14d1420e7fc226a59",
-  "bytes": 72880767,
-  "notes": "Checkout native dengan review dan pemulihan proses, pengaturan posisi peta Agentic tersimpan di HP, serta pencarian sidebar yang lebih rapi. Voice mengikuti konfigurasi server. Fitur Checkout mengikuti ketersediaan dan gate server."
+  "tag": "v0.1.1-build48",
+  "assetName": "titen-ai-0.1.1-build48-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build48/titen-ai-0.1.1-build48-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build48",
+  "sha256": "8fd2051c89b33bafbf263f7f76e53cad2d077b9f19a3862bae3d96aa054d43db",
+  "bytes": 72899131,
+  "notes": "Mengikuti web terbaru: review logo di chat/panel, log akses konektor dan status produksi sesuai izin. Scroll mengikuti jawaban AI dan perubahan tinggi panel voice, sambil mempertahankan posisi saat membaca riwayat. Backend dan konfigurasi voice tidak diubah."
 }
