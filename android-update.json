@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 49,
+  "versionCode": 50,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build49",
-  "assetName": "titen-ai-0.1.1-build49-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build49/titen-ai-0.1.1-build49-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build49",
-  "sha256": "7cb3fc791ab3518d9bfc8d113657ee4320491bd92f8f4f32813ce93f8a601583",
-  "bytes": 72899391,
-  "notes": "Mengikuti web terbaru: review logo, status produksi dan audit konektor sesuai izin. Scroll mengikuti jawaban AI termasuk saat voice terbuka. Memperbaiki sambungan Gemini Live dan crash saat mengirim chat dengan keyboard terbuka. Backend dan pengaturan model tidak diubah."
+  "tag": "v0.1.1-build50",
+  "assetName": "titen-ai-0.1.1-build50-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build50/titen-ai-0.1.1-build50-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build50",
+  "sha256": "915a21bd713e4b90c932f44fc25926748644729d70192f7caca1227e272bc2af",
+  "bytes": 72900219,
+  "notes": "Memperbaiki voice Gemini Android yang terputus saat AI berbicara atau menjawab panjang akibat antrean audio penuh. Backend serta pengaturan model, suara dan transkripsi tetap sama."
 }
