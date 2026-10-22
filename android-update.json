@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 53,
+  "versionCode": 54,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build53",
-  "assetName": "titen-ai-0.1.1-build53-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build53/titen-ai-0.1.1-build53-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build53",
-  "sha256": "f38b0e8786b2ce8e8aa3863f795e32f370aa065f9c14501a8dd5d2a7b8272e0a",
-  "bytes": 72641458,
-  "notes": "Pemulihan voice otomatis saat internet kembali tanpa mengirim ulang ucapan. Voice tamu tanpa login dan enam kartu pembuka mengikuti web terbaru. Perbaikan scroll, judul chat, render animasi dan query status."
+  "tag": "v0.1.1-build54",
+  "assetName": "titen-ai-0.1.1-build54-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build54/titen-ai-0.1.1-build54-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build54",
+  "sha256": "dfb88ca6865191e3cd3eaca033735357fbd893fd0af8e455a7e1bc8d26340556",
+  "bytes": 72675046,
+  "notes": "Build 54: tautan obrolan dibuka langsung di aplikasi dengan konfirmasi Ya/Tidak; Profil, menu plus, composer dan edisi OMJUM-1.0 mengikuti web terbaru. Perbaikan transkripsi dan status voice Gemini, serta respons akhir tanpa menunggu HTTP ditutup. Dua pertanyaan voice berturut-turut lulus di Samsung. Akurasi transkripsi mengikuti versi server."
 }
