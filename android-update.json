@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 52,
+  "versionCode": 53,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build52",
-  "assetName": "titen-ai-0.1.1-build52-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build52/titen-ai-0.1.1-build52-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build52",
-  "sha256": "0be22ae1c6357bca6b628687799ef883420b932241d903eddcd2aaf295215f49",
-  "bytes": 72913827,
-  "notes": "Mic langsung mendengarkan tanpa tombol Mulai bicara. Layar tetap menyala selama voice aktif, gelombang teal/emas/putih, dan pemulihan koneksi diperbaiki. Delapan tanya jawab Gemini lulus di Samsung. Menyertakan penyesuaian web terbaru untuk Checkout, draf person, Agentic, LRP, dan composer."
+  "tag": "v0.1.1-build53",
+  "assetName": "titen-ai-0.1.1-build53-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build53/titen-ai-0.1.1-build53-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build53",
+  "sha256": "f38b0e8786b2ce8e8aa3863f795e32f370aa065f9c14501a8dd5d2a7b8272e0a",
+  "bytes": 72641458,
+  "notes": "Pemulihan voice otomatis saat internet kembali tanpa mengirim ulang ucapan. Voice tamu tanpa login dan enam kartu pembuka mengikuti web terbaru. Perbaikan scroll, judul chat, render animasi dan query status."
 }
