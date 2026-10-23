@@ -1,7 +1,5 @@
 name: Notify Android update
 on:
-  release:
-    types: [published]
   workflow_dispatch:
     inputs:
       mode:
@@ -10,7 +8,7 @@ on:
         options: [validate, send]
         default: validate
       tag:
-        description: Stable release tag (blank means latest)
+        description: Expected stable S3 tag (blank means current public S3 manifest)
         type: string
         default: ''
 permissions:
@@ -20,7 +18,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   notify:
-    if: github.repository == 'hudantech/titen-ai-mobile-releases' && (github.event_name != 'release' || (!github.event.release.draft && !github.event.release.prerelease))
+    if: github.repository == 'hudantech/titen-ai-mobile-releases' && github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -34,9 +32,7 @@ jobs:
         with:
           node-version: 24
       - id: verified
-        name: Verify APK, checksum, release and both update manifests
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+        name: Verify public S3 APK, checksum, notices and both update manifests
         run: node scripts/notify-update.mjs verify
       - id: google
         uses: google-github-actions/auth@v3
@@ -51,5 +47,5 @@ jobs:
         env:
           FCM_ACCESS_TOKEN: ${{ steps.google.outputs.access_token }}
           UPDATE_BUILD: ${{ steps.verified.outputs.build }}
-          PUSH_MODE: ${{ github.event_name == 'release' && 'send' || inputs.mode }}
+          PUSH_MODE: ${{ inputs.mode }}
         run: node scripts/notify-update.mjs send

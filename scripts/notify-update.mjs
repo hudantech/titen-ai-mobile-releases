@@ -3,11 +3,12 @@ import { readFileSync, appendFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 
 export const repository = 'hudantech/titen-ai-mobile-releases';
+export const storageBase = 'https://is3.cloudhost.id/titenai';
 export const certificate = 'fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c';
 export function validateManifest(m, tag) {
   if (
     !m ||
-    m.schemaVersion !== 1 ||
+    ![1, 2].includes(m.schemaVersion) ||
     m.packageId !== 'id.titen.mobile' ||
     m.channel !== 'internal' ||
     m.certificateSha256 !== certificate ||
@@ -24,8 +25,12 @@ export function validateManifest(m, tag) {
     !Number.isSafeInteger(m.bytes) ||
     m.bytes < 1 ||
     m.bytes > 200 * 1024 * 1024 ||
-    m.apkUrl !== `https://github.com/${repository}/releases/download/${tag}/${m.assetName}` ||
-    m.releaseUrl !== `https://github.com/${repository}/releases/tag/${tag}`
+    (m.schemaVersion === 1
+      ? m.apkUrl !== `https://github.com/${repository}/releases/download/${tag}/${m.assetName}` ||
+        m.releaseUrl !== `https://github.com/${repository}/releases/tag/${tag}`
+      : m.distribution !== 's3' ||
+        m.apkUrl !== `${storageBase}/${m.assetName}` ||
+        m.releaseUrl !== `${storageBase}/android-release.html`)
   )
     throw Error('The stable update manifest is invalid or does not match the release.');
   return m;
@@ -120,20 +125,71 @@ export async function verifyRelease(tag) {
     throw Error('APK byte count or SHA-256 differs.');
   return manifest;
 }
+/** Public reads only. No S3 write key, account cookies, or Titen API is involved. */
+export async function verifyS3Release(tag = '', fetcher = fetch) {
+  const read = async (name, limit = 16384) => {
+    const response = await fetcher(`${storageBase}/${name}`, {
+      credentials: 'omit',
+      headers: { 'Cache-Control': 'no-cache' },
+      signal: AbortSignal.timeout(30000),
+    });
+    if (!response.ok) throw Error('S3 release object unavailable: ' + name);
+    const text = await response.text();
+    if (text.length > limit) throw Error('Oversized S3 metadata.');
+    return text;
+  };
+  const raw = JSON.parse(await read('android-update.json'));
+  const manifest = validateManifest(raw, tag || raw.tag);
+  if (manifest.schemaVersion !== 2) throw Error('S3 requires a storage manifest.');
+  const mirror = validateManifest(
+    JSON.parse(await read('android-update-backup.json')),
+    manifest.tag,
+  );
+  if (JSON.stringify(manifest) !== JSON.stringify(mirror))
+    throw Error('S3 update manifests differ; no push sent.');
+  if (
+    (await read(manifest.assetName + '.sha256')).trim() !==
+    manifest.sha256 + '  ' + manifest.assetName
+  )
+    throw Error('S3 checksum object differs.');
+  for (const name of ['LICENSES.txt', 'ANDROID-NOTICES.txt', 'android-release.html']) {
+    const result = await fetcher(`${storageBase}/${name}`, {
+      method: 'HEAD',
+      credentials: 'omit',
+      signal: AbortSignal.timeout(30000),
+    });
+    if (!result.ok) throw Error('Missing public S3 release object: ' + name);
+  }
+  const response = await fetcher(manifest.apkUrl, {
+    credentials: 'omit',
+    signal: AbortSignal.timeout(120000),
+  });
+  if (!response.ok || !response.body) throw Error('S3 APK is unavailable.');
+  const hash = createHash('sha256');
+  let bytes = 0;
+  for await (const chunk of response.body) {
+    bytes += chunk.length;
+    if (bytes > manifest.bytes) throw Error('S3 APK download is oversized.');
+    hash.update(chunk);
+  }
+  if (bytes !== manifest.bytes || hash.digest('hex') !== manifest.sha256)
+    throw Error('S3 APK size or SHA-256 differs.');
+  return manifest;
+}
 async function main() {
   const event = process.env.GITHUB_EVENT_PATH
     ? JSON.parse(readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8'))
     : {};
   const mode = process.argv[2];
   if (mode === 'verify') {
-    const manifest = await verifyRelease(event.release?.tag_name || event.inputs?.tag || '');
+    const manifest = await verifyS3Release(event.inputs?.tag || '');
     if (process.env.GITHUB_OUTPUT)
       appendFileSync(
         process.env.GITHUB_OUTPUT,
         `build=${manifest.versionCode}\ntag=${manifest.tag}\n`,
       );
     console.log(
-      `Verified stable build ${manifest.versionCode}: APK, SHA-256 and both update manifests.`,
+      `Verified stable S3 build ${manifest.versionCode}: APK, SHA-256 and both update manifests.`,
     );
   } else if (mode === 'send') {
     const message = updateMessage(Number(process.env.UPDATE_BUILD));
