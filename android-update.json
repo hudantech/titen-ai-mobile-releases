@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 54,
+  "versionCode": 55,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build54",
-  "assetName": "titen-ai-0.1.1-build54-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build54/titen-ai-0.1.1-build54-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build54",
-  "sha256": "dfb88ca6865191e3cd3eaca033735357fbd893fd0af8e455a7e1bc8d26340556",
-  "bytes": 72675046,
-  "notes": "Build 54: tautan obrolan dibuka langsung di aplikasi dengan konfirmasi Ya/Tidak; Profil, menu plus, composer dan edisi OMJUM-1.0 mengikuti web terbaru. Perbaikan transkripsi dan status voice Gemini, serta respons akhir tanpa menunggu HTTP ditutup. Dua pertanyaan voice berturut-turut lulus di Samsung. Akurasi transkripsi mengikuti versi server."
+  "tag": "v0.1.1-build55",
+  "assetName": "titen-ai-0.1.1-build55-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build55/titen-ai-0.1.1-build55-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build55",
+  "sha256": "51cbd093fcb9c20069b0977b49d9ed1095df68e1a20b2f091f0ab3a9fb7005cf",
+  "bytes": 74444920,
+  "notes": "Dikte (mic) menjadi draf pesan dan Live (gelombang) langsung mendengarkan. Memori tersimpan dalam popup 5 per halaman. Catatan update oranye. Notifikasi pembaruan Firebase dengan pemeriksaan cadangan, diaktifkan lewat Pengaturan Umum. Penyesuaian model jawaban voice dan connector sesuai web terbaru."
 }
