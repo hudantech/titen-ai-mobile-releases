@@ -1,0 +1,55 @@
+name: Notify Android update
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Validate credentials only, or send a data-only update check
+        type: choice
+        options: [validate, send]
+        default: validate
+      tag:
+        description: Stable release tag (blank means latest)
+        type: string
+        default: ''
+permissions:
+  contents: read
+concurrency:
+  group: android-update-push
+  cancel-in-progress: false
+jobs:
+  notify:
+    if: github.repository == 'hudantech/titen-ai-mobile-releases' && (github.event_name != 'release' || (!github.event.release.draft && !github.event.release.prerelease))
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - id: verified
+        name: Verify APK, checksum, release and both update manifests
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/notify-update.mjs verify
+      - id: google
+        uses: google-github-actions/auth@v3
+        with:
+          project_id: titen-ai-mobile
+          workload_identity_provider: projects/275160279664/locations/global/workloadIdentityPools/titen-github-updates/providers/github-releases
+          service_account: titen-update-sender@titen-ai-mobile.iam.gserviceaccount.com
+          token_format: access_token
+          access_token_scopes: https://www.googleapis.com/auth/firebase.messaging
+          create_credentials_file: false
+      - name: Send or validate FCM update check
+        env:
+          FCM_ACCESS_TOKEN: ${{ steps.google.outputs.access_token }}
+          UPDATE_BUILD: ${{ steps.verified.outputs.build }}
+          PUSH_MODE: ${{ github.event_name == 'release' && 'send' || inputs.mode }}
+        run: node scripts/notify-update.mjs send
