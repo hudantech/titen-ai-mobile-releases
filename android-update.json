@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "packageId": "id.titen.mobile",
   "versionName": "0.1.1",
-  "versionCode": 55,
+  "versionCode": 56,
   "channel": "internal",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "tag": "v0.1.1-build55",
-  "assetName": "titen-ai-0.1.1-build55-arm64.apk",
-  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build55/titen-ai-0.1.1-build55-arm64.apk",
-  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build55",
-  "sha256": "51cbd093fcb9c20069b0977b49d9ed1095df68e1a20b2f091f0ab3a9fb7005cf",
-  "bytes": 74444920,
-  "notes": "Dikte (mic) menjadi draf pesan dan Live (gelombang) langsung mendengarkan. Memori tersimpan dalam popup 5 per halaman. Catatan update oranye. Notifikasi pembaruan Firebase dengan pemeriksaan cadangan, diaktifkan lewat Pengaturan Umum. Penyesuaian model jawaban voice dan connector sesuai web terbaru."
+  "tag": "v0.1.1-build56",
+  "assetName": "titen-ai-0.1.1-build56-arm64.apk",
+  "apkUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/download/v0.1.1-build56/titen-ai-0.1.1-build56-arm64.apk",
+  "releaseUrl": "https://github.com/hudantech/titen-ai-mobile-releases/releases/tag/v0.1.1-build56",
+  "sha256": "f86025851964f137e03a796c5c860aba1100b70f485f2f08455f4a4844830f28",
+  "bytes": 74556912,
+  "notes": "Rilis penghubung ke S3. Proyek, Market Saya, navigasi Layanan dan ikon Live mengikuti web b22e724. Setelah memasang build 56, pemeriksaan update berikutnya memakai S3 dengan verifikasi checksum. Backend tidak diubah."
 }
